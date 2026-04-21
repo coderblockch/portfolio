@@ -6,6 +6,13 @@ const projects = [
     tags: ["Python", "Bitcoin", "Blockchain", "API"],
     link: "https://github.com/coderblockch/portfolio",
   },
+  {
+    title: "Personal Resume",
+    description:
+      "Desarrollador Full Stack en formación constante, especializado en el ecosistema Python (Django/Flask) y React. Mi enfoque combina fundamentos sólidos de programación con el uso estratégico de Claude Code y herramientas de IA para acelerar la entrega de soluciones, optimizar la arquitectura de código y resolver desafíos técnicos complejos con eficiencia y escalabilidad.",
+    tags: ["Python", "Django", "Flask", "React", "Claude Code"],
+    link: "#",
+  },
 ];
 
 export default function Projects() {
