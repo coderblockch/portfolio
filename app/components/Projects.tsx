@@ -13,6 +13,13 @@ const projects = [
     tags: ["Python", "Django", "Flask", "React", "Claude Code"],
     link: "#",
   },
+  {
+    title: "Web3 Wallet Connect",
+    description:
+      "DApp que permite conectar wallets de criptomonedas, consultar balances y visualizar historial de transacciones en tiempo real usando la blockchain de Ethereum.",
+    tags: ["React", "Web3.js", "Ethereum", "TypeScript"],
+    link: "#",
+  },
 ];
 
 export default function Projects() {
