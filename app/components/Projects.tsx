@@ -18,13 +18,13 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 max-w-5xl mx-auto">
-      <p className="text-neutral-500 font-mono text-sm mb-2">02.</p>
+      <p className="text-violet-400 font-mono text-sm mb-2">02.</p>
       <h2 className="text-3xl font-bold text-white mb-12">Proyectos</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border border-white/10 rounded-lg p-6 hover:border-white/25 transition-colors group"
+            className="border border-white/10 rounded-lg p-6 hover:border-violet-500/50 transition-colors group"
           >
             <div className="flex justify-between items-start mb-4">
               <svg className="w-8 h-8 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ export default function Projects() {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs font-mono text-neutral-400 bg-white/5 px-2 py-1 rounded"
+                  className="text-xs font-mono text-violet-300 bg-violet-500/10 px-2 py-1 rounded border border-violet-500/20"
                 >
                   {tag}
                 </span>
