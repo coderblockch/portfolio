@@ -4,7 +4,7 @@ const projects = [
     description:
       "Script para monitorear y analizar activos digitales en la blockchain de Bitcoin y otras criptomonedas. Permite rastrear transacciones, balances y métricas de múltiples wallets en tiempo real.",
     tags: ["Python", "Bitcoin", "Blockchain", "API"],
-    link: "#",
+    link: "https://github.com/coderblockch/portfolio",
   },
 ];
 
