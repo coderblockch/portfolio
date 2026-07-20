@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — David Jiménez
 
-## Getting Started
+Portafolio personal de **David Jiménez**, desarrollador fullstack, construido con Next.js (App Router), TypeScript y Tailwind CSS.
 
-First, run the development server:
+![Hero](docs/hero.png)
+
+## Características
+
+- Diseño de una sola página con secciones: Hero, Sobre mí, Proyectos, Habilidades y Contacto.
+- Navegación con scroll suave a cada sección desde una barra superior fija.
+- Tema oscuro con acentos violeta y tipografía Geist (`next/font`).
+- Totalmente responsive (móvil, tablet y escritorio).
+- Renderizado estático (SSG) — carga rápida y fácil de desplegar.
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- [React 19](https://react.dev)
+- [TypeScript 5](https://www.typescriptlang.org)
+- [Tailwind CSS 4](https://tailwindcss.com)
+- ESLint (`eslint-config-next`)
+
+## Capturas
+
+| Proyectos | Habilidades y contacto |
+| --- | --- |
+| ![Proyectos](docs/projects.png) | ![Habilidades](docs/skills-contact.png) |
+
+## Empezar
+
+Requisitos: [Node.js](https://nodejs.org) 18.18+ (recomendado 20 LTS) y npm.
 
 ```bash
+# 1. Clonar el repositorio
+git clone https://github.com/coderblockch/portfolio.git
+cd portfolio
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Arrancar el servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el servidor de desarrollo. |
+| `npm run build` | Genera la build de producción. |
+| `npm run start` | Sirve la build de producción. |
+| `npm run lint` | Ejecuta ESLint. |
 
-## Learn More
+## Variables de entorno
 
-To learn more about Next.js, take a look at the following resources:
+Este proyecto no requiere variables de entorno ni claves de API para funcionar. Si añades servicios externos en el futuro, crea un archivo `.env.local` (ya ignorado por Git) y documenta las claves aquí. **Nunca subas secretos reales al repositorio.**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+├── components/      # Navbar, Hero, About, Projects, Skills, Contact
+├── globals.css      # Estilos globales y tema de Tailwind
+├── layout.tsx       # Layout raíz y metadatos
+└── page.tsx         # Composición de la página principal
+docs/                # Capturas usadas en el README
+public/              # Recursos estáticos
+```
 
-## Deploy on Vercel
+## Despliegue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+La forma más sencilla de desplegar es con [Vercel](https://vercel.com/new). También funciona en cualquier plataforma que soporte Next.js (`npm run build` + `npm run start`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licencia
+
+Distribuido bajo la licencia MIT. Ver [`LICENSE`](LICENSE) para más detalles.
