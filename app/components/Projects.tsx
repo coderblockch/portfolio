@@ -1,24 +1,56 @@
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  code: string;
+  demo?: string;
+};
+
+const projects: Project[] = [
   {
-    title: "Blockchain Asset Tracker",
+    title: "Weather App",
     description:
-      "Script para monitorear y analizar activos digitales en la blockchain de Bitcoin y otras criptomonedas. Permite rastrear transacciones, balances y métricas de múltiples wallets en tiempo real.",
-    tags: ["Python", "Bitcoin", "Blockchain", "API"],
-    link: "https://github.com/coderblockch/portfolio",
+      "App del clima en tiempo real. Busca cualquier ciudad y muestra temperatura, sensación térmica, humedad y viento usando la API de Open-Meteo, con conmutador °C/°F.",
+    tags: ["JavaScript", "API", "HTML/CSS"],
+    code: "https://github.com/coderblockch/weather-app",
+    demo: "https://coderblockch.github.io/weather-app",
   },
   {
-    title: "Personal Resume",
+    title: "Crypto Dashboard",
     description:
-      "Desarrollador Full Stack en formación constante, especializado en el ecosistema Python (Django/Flask) y React. Mi enfoque combina fundamentos sólidos de programación con el uso estratégico de Claude Code y herramientas de IA para acelerar la entrega de soluciones, optimizar la arquitectura de código y resolver desafíos técnicos complejos con eficiencia y escalabilidad.",
-    tags: ["Python", "Django", "Flask", "React", "Claude Code"],
-    link: "#",
+      "Dashboard de criptomonedas con precios en vivo (CoinGecko), gráficos históricos, auto-refresh y autenticación de usuarios con Firebase.",
+    tags: ["JavaScript", "Firebase", "Chart.js", "API"],
+    code: "https://github.com/coderblockch/crypto-dashboard",
   },
   {
-    title: "Web3 Wallet Connect",
+    title: "SacHealth OS",
     description:
-      "DApp que permite conectar wallets de criptomonedas, consultar balances y visualizar historial de transacciones en tiempo real usando la blockchain de Ethereum.",
-    tags: ["React", "Web3.js", "Ethereum", "TypeScript"],
-    link: "#",
+      "Prototipo HealthTech full-stack: motor de triaje clínico basado en reglas (CDSS) y panel de gestión de camas en tiempo real, con FastAPI y SQLModel.",
+    tags: ["Python", "FastAPI", "SQLModel", "JavaScript"],
+    code: "https://github.com/coderblockch/sachealth-os",
+  },
+  {
+    title: "QuipuCash",
+    description:
+      "Panel de criptomonedas con noticias, tabla de precios/variación 24h y gráfico interactivo con Chart.js.",
+    tags: ["JavaScript", "Chart.js", "HTML/CSS"],
+    code: "https://github.com/coderblockch/QuipuCash",
+  },
+  {
+    title: "To-Do List",
+    description:
+      "Gestor de tareas con agregar, completar y eliminar, y persistencia en el navegador mediante localStorage.",
+    tags: ["JavaScript", "localStorage", "HTML/CSS"],
+    code: "https://github.com/coderblockch/todo-list",
+    demo: "https://coderblockch.github.io/todo-list",
+  },
+  {
+    title: "Guess My Number",
+    description:
+      "Juego interactivo de adivinar el número con seguimiento de puntaje y manejo del estado del juego.",
+    tags: ["JavaScript", "HTML/CSS"],
+    code: "https://github.com/coderblockch/guess-my-number",
+    demo: "https://coderblockch.github.io/guess-my-number",
   },
 ];
 
@@ -31,25 +63,18 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border border-white/10 rounded-lg p-6 hover:border-violet-500/50 transition-colors group"
+            className="flex flex-col border border-white/10 rounded-lg p-6 hover:border-violet-500/50 transition-colors group"
           >
-            <div className="flex justify-between items-start mb-4">
-              <svg className="w-8 h-8 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-              </svg>
-              <a href={project.link} className="text-neutral-500 hover:text-white transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
+            <svg className="w-8 h-8 text-neutral-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+            </svg>
             <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-neutral-200 transition-colors">
               {project.title}
             </h3>
             <p className="text-neutral-500 text-sm leading-relaxed mb-4">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-5">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
@@ -58,6 +83,26 @@ export default function Projects() {
                   {tag}
                 </span>
               ))}
+            </div>
+            <div className="mt-auto flex gap-4 text-sm">
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-300 font-semibold hover:text-violet-200 transition-colors"
+                >
+                  Demo en vivo →
+                </a>
+              )}
+              <a
+                href={project.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
+                Código
+              </a>
             </div>
           </div>
         ))}

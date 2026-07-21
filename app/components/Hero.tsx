@@ -12,7 +12,7 @@ export default function Hero() {
         Estudiante de desarrollo de software apasionado por construir aplicaciones web
         modernas y explorar tecnologías emergentes como blockchain.
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
         <a
           href="#projects"
           className="px-6 py-3 bg-violet-600 text-white font-semibold text-sm rounded hover:bg-violet-500 transition-colors"
@@ -24,6 +24,13 @@ export default function Hero() {
           className="px-6 py-3 border border-violet-500/50 text-violet-300 font-semibold text-sm rounded hover:border-violet-400 hover:text-violet-200 transition-colors"
         >
           Contacto
+        </a>
+        <a
+          href="/cv.pdf"
+          download
+          className="px-6 py-3 border border-white/15 text-neutral-300 font-semibold text-sm rounded hover:border-white/40 hover:text-white transition-colors"
+        >
+          Descargar CV
         </a>
       </div>
     </section>
