@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — David Jiménez
 
-## Getting Started
+Portfolio personal de un desarrollador fullstack, construido con **Next.js 16**, **React 19**, **TypeScript** y **Tailwind CSS v4**. Es una landing de una sola página con secciones de presentación, sobre mí, proyectos, habilidades y contacto.
 
-First, run the development server:
+## Demo en vivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<!-- Reemplaza esta URL por la de tu despliegue una vez publicado en Vercel -->
+🔗 **[Ver demo en vivo](https://portfolio-coderblockch.vercel.app)**
+
+## Capturas
+
+<!-- Agrega una captura o GIF de la página para que los reclutadores la vean sin clonar el repo -->
+<!-- ![Portfolio](public/screenshot.png) -->
+
+## Stack técnico
+
+- **Framework:** Next.js 16 (App Router)
+- **UI:** React 19 + TypeScript
+- **Estilos:** Tailwind CSS v4
+- **Tipografía:** Geist (`next/font`)
+- **Linting:** ESLint (`eslint-config-next`)
+
+## Estructura
+
+```
+app/
+├── layout.tsx          # Layout raíz y metadata (SEO)
+├── page.tsx            # Composición de la página
+├── globals.css         # Estilos globales / tema
+└── components/
+    ├── Navbar.tsx      # Navegación fija con anclas
+    ├── Hero.tsx        # Sección principal
+    ├── About.tsx       # Sobre mí
+    ├── Projects.tsx    # Galería de proyectos
+    ├── Skills.tsx      # Habilidades técnicas
+    └── Contact.tsx     # Contacto y redes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Requisitos: **Node.js 20+**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 1. Instalar dependencias
+npm install
 
-## Learn More
+# 2. Levantar el servidor de desarrollo
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador. La página se actualiza automáticamente al editar los archivos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Script          | Descripción                                  |
+| --------------- | -------------------------------------------- |
+| `npm run dev`   | Servidor de desarrollo con recarga en vivo   |
+| `npm run build` | Compila la versión de producción             |
+| `npm run start` | Sirve la build de producción                 |
+| `npm run lint`  | Ejecuta ESLint sobre el proyecto             |
 
-## Deploy on Vercel
+## Despliegue en Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+La forma más sencilla de publicar este portfolio es con [Vercel](https://vercel.com) (los creadores de Next.js). Con un clic se clona el repo en tu cuenta y queda en línea:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/coderblockch/portfolio)
+
+Pasos manuales alternativos:
+
+1. Crea una cuenta en [vercel.com](https://vercel.com) e inicia sesión con GitHub.
+2. **Add New… → Project** e importa el repositorio `coderblockch/portfolio`.
+3. Vercel detecta Next.js automáticamente; no necesitas cambiar la configuración.
+4. Pulsa **Deploy**. Cada `push` a `main` volverá a desplegar automáticamente.
+
+## Licencia
+
+Distribuido bajo la licencia MIT. Consulta el archivo [`LICENSE`](LICENSE) si está disponible.
