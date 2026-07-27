@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,9 +12,57 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
+const title = "David Jiménez — Desarrollador Fullstack";
+const description =
+  "Portfolio de David Jiménez, desarrollador fullstack especializado en Next.js, React, TypeScript y Web3.";
+
 export const metadata: Metadata = {
-  title: "David Jiménez — Desarrollador Fullstack",
-  description: "Portfolio de David Jiménez, desarrollador fullstack especializado en Next.js, React, TypeScript y Web3.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: title,
+    template: "%s | David Jiménez",
+  },
+  description,
+  applicationName: "Portfolio de David Jiménez",
+  authors: [{ name: "David Jiménez" }],
+  creator: "David Jiménez",
+  keywords: [
+    "David Jiménez",
+    "desarrollador fullstack",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Web3",
+    "portfolio",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "/",
+    siteName: title,
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -24,7 +72,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
