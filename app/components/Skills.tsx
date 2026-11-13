@@ -1,19 +1,19 @@
 const skillGroups = [
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+    skills: ["JavaScript", "React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS", "Chart.js"],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Python", "PostgreSQL", "REST APIs"],
+    skills: ["Python", "Flask", "FastAPI", "SQLAlchemy / SQLModel", "SQLite", "REST APIs"],
   },
   {
-    category: "Blockchain / Web3",
-    skills: ["Bitcoin", "Smart Contracts", "Wallets", "Crypto APIs"],
+    category: "Testing y servicios",
+    skills: ["pytest", "unittest", "Firebase Auth", "Render", "Vercel", "GitHub Pages"],
   },
   {
     category: "Herramientas",
-    skills: ["Git", "GitHub", "VS Code", "Linux", "npm"],
+    skills: ["Git", "GitHub", "npm"],
   },
 ];
 
