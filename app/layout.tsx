@@ -12,30 +12,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-bay-nine-59.vercel.app";
 
-const title = "David Jiménez — Desarrollador Fullstack";
+const title = "David Jimenez — Junior Full-Stack Developer";
 const description =
-  "Portfolio de David Jiménez, desarrollador fullstack especializado en Next.js, React, TypeScript y Web3.";
+  "Portfolio de David Jimenez, desarrollador full-stack junior: Python (Flask, FastAPI), JavaScript, React y Next.js, con proyectos y demos en vivo.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: title,
-    template: "%s | David Jiménez",
+    template: "%s | David Jimenez",
   },
   description,
-  applicationName: "Portfolio de David Jiménez",
-  authors: [{ name: "David Jiménez" }],
-  creator: "David Jiménez",
+  applicationName: "Portfolio de David Jimenez",
+  authors: [{ name: "David Jimenez" }],
+  creator: "David Jimenez",
   keywords: [
-    "David Jiménez",
-    "desarrollador fullstack",
+    "David Jimenez",
+    "desarrollador full-stack",
+    "junior full-stack developer",
     "Next.js",
     "React",
     "TypeScript",
     "Tailwind CSS",
-    "Web3",
+    "Python",
+    "Flask",
+    "FastAPI",
     "portfolio",
   ],
   alternates: {

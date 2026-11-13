@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "David Jiménez — Desarrollador Fullstack";
+export const alt = "David Jimenez — Junior Full-Stack Developer";
 export const size = {
   width: 1200,
   height: 630,
@@ -26,13 +26,13 @@ export default function Image() {
       >
         <div style={{ fontSize: 30, color: "#a78bfa" }}>Hola, soy</div>
         <div style={{ fontSize: 96, fontWeight: 700, marginTop: 12 }}>
-          DavidDev
+          David Jimenez
         </div>
         <div style={{ fontSize: 44, color: "#c4b5fd", marginTop: 8 }}>
-          Desarrollador Fullstack
+          Junior Full-Stack Developer
         </div>
         <div style={{ fontSize: 28, color: "#a3a3a3", marginTop: 32 }}>
-          Next.js · React · TypeScript · Web3
+          Python · Flask · FastAPI · JavaScript · React
         </div>
       </div>
     ),
