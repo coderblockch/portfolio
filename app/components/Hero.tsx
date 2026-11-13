@@ -1,6 +1,6 @@
 // Set to true once public/cv.pdf is added, so the "Descargar CV" button
 // never points to a missing file on the live site.
-const SHOW_CV_BUTTON = false;
+const SHOW_CV_BUTTON = true;
 
 export default function Hero() {
   return (
