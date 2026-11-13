@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="hero" className="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto">
       <p className="text-violet-400 font-mono text-sm mb-4">Hola, soy</p>
       <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
-        DavidDev
+        David Jimenez
       </h1>
       <h2 className="text-2xl md:text-3xl font-semibold text-violet-300 mb-6">
         Junior Full-Stack Developer

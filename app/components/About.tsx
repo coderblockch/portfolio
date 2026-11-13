@@ -1,11 +1,12 @@
 const stack = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Node.js",
   "Python",
-  "PostgreSQL",
-  "Tailwind CSS",
+  "Flask",
+  "FastAPI",
+  "JavaScript",
+  "React / Next.js",
+  "TypeScript",
+  "SQLite",
+  "pytest",
 ];
 
 export default function About() {
@@ -16,17 +17,18 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div className="space-y-4 text-neutral-400 leading-relaxed">
           <p>
-            Soy David, estudiante de desarrollo fullstack con enfoque en construir
-            soluciones web completas, desde el frontend hasta el backend.
+            Soy David, desarrollador full-stack junior y estudiante del bootcamp de
+            desarrollo de software DUAD. Me enfoco en construir aplicaciones web
+            completas, desde el frontend hasta el backend.
           </p>
           <p>
-            Me interesa especialmente el ecosistema blockchain y las tecnologías
-            descentralizadas. Actualmente aprendiendo y construyendo proyectos que
-            combinan desarrollo web moderno con Web3.
+            En el backend trabajo con Python (Flask y FastAPI), bases de datos SQLite y
+            pruebas automatizadas con pytest. En el frontend uso JavaScript, React,
+            Next.js y TypeScript, consumiendo APIs REST.
           </p>
           <p>
-            Cuando no estoy programando, estoy explorando nuevas tecnologías y
-            expandiendo mis conocimientos en el ecosistema crypto.
+            Cada proyecto de esta página tiene su código en GitHub y, cuando es posible,
+            un demo en vivo.
           </p>
         </div>
         <div className="border border-violet-500/30 rounded-lg p-6 bg-violet-950/20">
