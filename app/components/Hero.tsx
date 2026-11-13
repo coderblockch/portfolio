@@ -1,3 +1,7 @@
+// Set to true once public/cv.pdf is added, so the "Descargar CV" button
+// never points to a missing file on the live site.
+const SHOW_CV_BUTTON = false;
+
 export default function Hero() {
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto">
@@ -6,11 +10,12 @@ export default function Hero() {
         DavidDev
       </h1>
       <h2 className="text-2xl md:text-3xl font-semibold text-violet-300 mb-6">
-        Desarrollador Fullstack
+        Junior Full-Stack Developer
       </h2>
       <p className="text-neutral-400 max-w-xl text-lg leading-relaxed mb-10">
-        Estudiante de desarrollo de software apasionado por construir aplicaciones web
-        modernas y explorar tecnologías emergentes como blockchain.
+        Desarrollador full-stack junior en formación en el bootcamp DUAD. Construyo
+        aplicaciones web con Python (Flask, FastAPI) y JavaScript, con pruebas
+        automatizadas y demos en vivo.
       </p>
       <div className="flex flex-wrap gap-4">
         <a
@@ -25,6 +30,7 @@ export default function Hero() {
         >
           Contacto
         </a>
+        {SHOW_CV_BUTTON && (
         <a
           href="/cv.pdf"
           download
@@ -32,6 +38,7 @@ export default function Hero() {
         >
           Descargar CV
         </a>
+        )}
       </div>
     </section>
   );

@@ -8,6 +8,14 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Finance Tracker",
+    description:
+      "App web de finanzas personales multiusuario: registro e inicio de sesión, categorías, ingresos y gastos, panel con balance y resumen por mes y categoría. Base de datos SQLite y 19 pruebas con pytest.",
+    tags: ["Python", "Flask", "SQLite", "pytest"],
+    code: "https://github.com/coderblockch/finance-tracker-flask",
+    demo: "https://finance-tracker-kln2.onrender.com",
+  },
+  {
     title: "Weather App",
     description:
       "App del clima en tiempo real. Busca cualquier ciudad y muestra temperatura, sensación térmica, humedad y viento usando la API de Open-Meteo, con conmutador °C/°F.",
@@ -21,6 +29,7 @@ const projects: Project[] = [
       "Dashboard de criptomonedas con precios en vivo (CoinGecko), gráficos históricos, auto-refresh y autenticación de usuarios con Firebase.",
     tags: ["JavaScript", "Firebase", "Chart.js", "API"],
     code: "https://github.com/coderblockch/crypto-dashboard",
+    demo: "https://coderblockch.github.io/crypto-dashboard/",
   },
   {
     title: "SacHealth OS",
@@ -35,6 +44,7 @@ const projects: Project[] = [
       "Panel de criptomonedas con noticias, tabla de precios/variación 24h y gráfico interactivo con Chart.js.",
     tags: ["JavaScript", "Chart.js", "HTML/CSS"],
     code: "https://github.com/coderblockch/QuipuCash",
+    demo: "https://coderblockch.github.io/QuipuCash/",
   },
   {
     title: "To-Do List",
