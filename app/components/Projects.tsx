@@ -8,6 +8,14 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "SacHealth OS",
+    description:
+      "App HealthTech full-stack: motor de triaje clínico basado en reglas (CDSS) y panel de gestión de camas. Login de personal con contraseñas bcrypt y JWT, API REST con FastAPI y SQLModel, 43 pruebas con pytest y CI con GitHub Actions. Usuario demo: demo@sachealth.dev / sachealth-demo.",
+    tags: ["Python", "FastAPI", "SQLModel", "JWT", "pytest", "JavaScript"],
+    code: "https://github.com/coderblockch/sachealth-os",
+    demo: "https://sachealth-os.onrender.com",
+  },
+  {
     title: "Finance Tracker",
     description:
       "App web de finanzas personales multiusuario: registro e inicio de sesión, categorías, ingresos y gastos, panel con balance y resumen por mes y categoría. Base de datos SQLite y 19 pruebas con pytest.",
@@ -30,13 +38,6 @@ const projects: Project[] = [
     tags: ["JavaScript", "Firebase", "Chart.js", "API"],
     code: "https://github.com/coderblockch/crypto-dashboard",
     demo: "https://coderblockch.github.io/crypto-dashboard/",
-  },
-  {
-    title: "SacHealth OS",
-    description:
-      "Prototipo HealthTech full-stack: motor de triaje clínico basado en reglas (CDSS) y panel de gestión de camas en tiempo real, con FastAPI y SQLModel.",
-    tags: ["Python", "FastAPI", "SQLModel", "JavaScript"],
-    code: "https://github.com/coderblockch/sachealth-os",
   },
   {
     title: "QuipuCash",
