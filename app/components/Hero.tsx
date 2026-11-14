@@ -17,6 +17,18 @@ export default function Hero() {
         aplicaciones web con Python (Flask, FastAPI) y JavaScript, con pruebas
         automatizadas y demos en vivo.
       </p>
+      <p className="text-neutral-400 max-w-xl text-sm mb-10 -mt-6">
+        Proyecto destacado:{" "}
+        <a
+          href="https://sachealth-os.onrender.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-violet-300 font-semibold hover:text-violet-200 underline underline-offset-4"
+        >
+          SacHealth OS
+        </a>
+        , triaje clínico y gestión de camas con FastAPI, en vivo en Render.
+      </p>
       <div className="flex flex-wrap gap-4">
         <a
           href="#projects"
