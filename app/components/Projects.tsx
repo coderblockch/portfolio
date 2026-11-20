@@ -28,8 +28,8 @@ const projects: Project[] = [
     description:
       "App del clima en tiempo real. Busca cualquier ciudad y muestra temperatura, sensación térmica, humedad y viento usando la API de Open-Meteo, con conmutador °C/°F.",
     tags: ["JavaScript", "API", "HTML/CSS"],
-    code: "https://github.com/coderblockch/weather-app",
-    demo: "https://coderblockch.github.io/weather-app",
+    code: "https://github.com/coderblockch/javascript-mini-projects/tree/main/weather-app",
+    demo: "https://coderblockch.github.io/javascript-mini-projects/weather-app/",
   },
   {
     title: "Crypto Dashboard",
@@ -52,16 +52,16 @@ const projects: Project[] = [
     description:
       "Gestor de tareas con agregar, completar y eliminar, y persistencia en el navegador mediante localStorage.",
     tags: ["JavaScript", "localStorage", "HTML/CSS"],
-    code: "https://github.com/coderblockch/todo-list",
-    demo: "https://coderblockch.github.io/todo-list",
+    code: "https://github.com/coderblockch/javascript-mini-projects/tree/main/todo-list",
+    demo: "https://coderblockch.github.io/javascript-mini-projects/todo-list/",
   },
   {
     title: "Guess My Number",
     description:
       "Juego interactivo de adivinar el número con seguimiento de puntaje y manejo del estado del juego.",
     tags: ["JavaScript", "HTML/CSS"],
-    code: "https://github.com/coderblockch/guess-my-number",
-    demo: "https://coderblockch.github.io/guess-my-number",
+    code: "https://github.com/coderblockch/javascript-mini-projects/tree/main/guess-my-number",
+    demo: "https://coderblockch.github.io/javascript-mini-projects/guess-my-number/",
   },
 ];
 
